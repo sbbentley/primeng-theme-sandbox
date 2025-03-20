@@ -2,9 +2,6 @@ import { Injectable, effect, signal, computed } from '@angular/core';
 import { Subject } from 'rxjs';
 
 export interface layoutConfig {
-    preset?: string;
-    primary?: string;
-    surface?: string | undefined | null;
     darkTheme?: boolean;
     menuMode?: string;
 }
@@ -27,11 +24,8 @@ interface MenuChangeEvent {
 })
 export class LayoutService {
     _config: layoutConfig = {
-        preset: 'Aura',
-        primary: 'emerald',
-        surface: null,
         darkTheme: false,
-        menuMode: 'static'
+        menuMode: 'overlay'
     };
 
     _state: LayoutState = {
@@ -68,11 +62,7 @@ export class LayoutService {
 
     isDarkTheme = computed(() => this.layoutConfig().darkTheme);
 
-    getPrimary = computed(() => this.layoutConfig().primary);
-
-    getSurface = computed(() => this.layoutConfig().surface);
-
-    isOverlay = computed(() => this.layoutConfig().menuMode === 'overlay');
+    isOverlay = true;
 
     transitionComplete = signal<boolean>(false);
 
@@ -136,7 +126,7 @@ export class LayoutService {
     }
 
     onMenuToggle() {
-        if (this.isOverlay()) {
+        if (this.isOverlay) {
             this.layoutState.update((prev) => ({ ...prev, overlayMenuActive: !this.layoutState().overlayMenuActive }));
 
             if (this.layoutState().overlayMenuActive) {
