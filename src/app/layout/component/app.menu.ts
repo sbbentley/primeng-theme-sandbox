@@ -50,11 +50,6 @@ export class AppMenu {
                 routerLink: ['/pages'],
                 items: [
                     {
-                        label: 'Landing',
-                        icon: 'pi pi-fw pi-globe',
-                        routerLink: ['/landing']
-                    },
-                    {
                         label: 'Auth',
                         icon: 'pi pi-fw pi-user',
                         items: [

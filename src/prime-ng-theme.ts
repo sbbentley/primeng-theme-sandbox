@@ -314,7 +314,7 @@ export const MyPreset = definePreset(Aura, {
                 highlight: {
                     background: "color-mix(in srgb, {primary.color}, transparent 88%)",
                     focusBackground: "color-mix(in srgb, {primary.color}, transparent 76%)",
-                    color: "{primary.700}",
+                    color: "{surface.800}",
                     focusColor: "{primary.800}"
                 },
                 mask: {
@@ -323,18 +323,18 @@ export const MyPreset = definePreset(Aura, {
                 },
                 formField: {
                     background: "{surface.0}",
-                    disabledBackground: "{surface.300}",
+                    disabledBackground: "{surface.50}",
                     filledBackground: "{surface.100}",
                     filledHoverBackground: "{surface.200}",
                     filledFocusBackground: "{surface.100}",
-                    borderColor: "{surface.400}",
-                    hoverBorderColor: "{surface.900}",
+                    borderColor: "{surface.200}",
+                    hoverBorderColor: "{surface.500}",
                     focusBorderColor: "{primary.color}",
-                    invalidBorderColor: "{red.800}",
-                    color: "{surface.900}",
+                    invalidBorderColor: "{red.700}",
+                    color: "{surface.700}",
                     disabledColor: "{surface.600}",
                     placeholderColor: "{surface.600}",
-                    invalidPlaceholderColor: "{red.800}",
+                    invalidPlaceholderColor: "{red.700}",
                     floatLabelColor: "{surface.600}",
                     floatLabelFocusColor: "{primary.600}",
                     floatLabelActiveColor: "{surface.600}",
@@ -343,7 +343,7 @@ export const MyPreset = definePreset(Aura, {
                     shadow: "none"
                 },
                 text: {
-                    color: "{surface.900}",
+                    color: "{surface.950}",
                     hoverColor: "{surface.900}",
                     mutedColor: "{surface.600}",
                     hoverMutedColor: "{surface.600}"
@@ -877,7 +877,7 @@ export const MyPreset = definePreset(Aura, {
                 roundedBorderRadius: "2rem",
                 gap: "0.5rem",
                 paddingX: "1rem",
-                paddingY: "0.625rem",
+                paddingY: "0.71rem",
                 iconOnlyWidth: "3rem",
                 sm: {
                     fontSize: "{form.field.sm.font.size}",
@@ -4455,12 +4455,12 @@ export const MyPreset = definePreset(Aura, {
         },
         togglebutton: {
             root: {
-                padding: "0.75rem 1rem",
+                padding: "0.567rem 1rem",
                 borderRadius: "{form.field.border.radius}",
                 gap: "0.5rem",
                 fontWeight: "500",
-                background: "{form.field.background}",
-                borderColor: "{form.field.border.color}",
+                background: "{surface.100}",
+                borderColor: "{surface.100}",
                 color: "{form.field.color}",
                 hoverColor: "{form.field.color}",
                 checkedColor: "{form.field.color}",
@@ -4501,8 +4501,8 @@ export const MyPreset = definePreset(Aura, {
             colorScheme: {
                 light: {
                     root: {
-                        hoverBackground: "{surface.100}",
-                        checkedBackground: "{surface.200}"
+                        hoverBackground: "{surface.200}",
+                        checkedBackground: "{surface.100}"
                     }
                 },
                 dark: {
@@ -4515,16 +4515,16 @@ export const MyPreset = definePreset(Aura, {
         },
         toggleswitch: {
             root: {
-                width: "2.75rem",
-                height: "1rem",
-                borderRadius: "30px",
-                gap: "0px",
+                width: "2.5rem",
+                height: "1.5rem",
+                borderRadius: "35px",
+                gap: ".25rem",
                 shadow: "none",
                 focusRing: {
-                    width: "0",
-                    style: "none",
+                    width: "1px",
+                    style: "solid",
                     color: "unset",
-                    offset: "0",
+                    offset: "2px",
                     shadow: "none"
                 },
                 borderWidth: "1px",
@@ -4538,23 +4538,23 @@ export const MyPreset = definePreset(Aura, {
             },
             handle: {
                 borderRadius: "50%",
-                size: "1.5rem"
+                size: "1rem"
             },
             colorScheme: {
                 light: {
                     root: {
                         background: "{surface.300}",
-                        disabledBackground: "{surface.400}",
+                        disabledBackground: "{surface.200}",
                         hoverBackground: "{surface.300}",
-                        checkedBackground: "{primary.200}",
-                        checkedHoverBackground: "{primary.200}"
+                        checkedBackground: "{primary.400}",
+                        checkedHoverBackground: "{primary.500}"
                     },
                     handle: {
                         background: "{surface.0}",
-                        disabledBackground: "{surface.200}",
+                        disabledBackground: "{{primary.contrast.color}",
                         hoverBackground: "{surface.0}",
-                        checkedBackground: "{primary.color}",
-                        checkedHoverBackground: "{primary.color}",
+                        checkedBackground: "{primary.contrast.color}",
+                        checkedHoverBackground: "{primary.contrast.color}",
                         color: "{text.muted.color}",
                         hoverColor: "{text.color}",
                         checkedColor: "{primary.contrast.color}",
