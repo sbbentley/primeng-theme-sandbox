@@ -877,8 +877,8 @@ export const MyPreset = definePreset(Aura, {
                 borderRadius: "{form.field.border.radius}",
                 roundedBorderRadius: "2rem",
                 gap: "0.5rem",
-                paddingX: "9px",
-                paddingY: "9px",
+                paddingX: "1rem",
+                paddingY: "0.625rem",
                 iconOnlyWidth: "3rem",
                 sm: {
                     fontSize: "{form.field.sm.font.size}",
