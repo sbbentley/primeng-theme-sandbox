@@ -4456,7 +4456,7 @@ export const MyPreset = definePreset(Aura, {
         },
         togglebutton: {
             root: {
-                padding: "0.5rem .75rem",
+                padding: "0.65rem 1rem",
                 borderRadius: "{form.field.border.radius}",
                 gap: "0.5rem",
                 fontWeight: "600",
@@ -4498,7 +4498,7 @@ export const MyPreset = definePreset(Aura, {
                         color: "{surface.600}",
                         sm: {
                             fontSize: "{form.field.sm.font.size}",
-                            padding: "0.4rem .5rem"
+                            padding: "0.625rem 0.75rem"
                         },
                         lg: {
                             fontSize: "{form.field.lg.font.size}",
