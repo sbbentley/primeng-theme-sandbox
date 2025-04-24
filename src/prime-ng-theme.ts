@@ -375,12 +375,12 @@ export const MyPreset = definePreset(Aura, {
                 },
                 list: {
                     option: {
-                        focusBackground: "{surface.100}",
-                        selectedBackground: "{highlight.background}",
-                        selectedFocusBackground: "{highlight.focus.background}",
+                        focusBackground: "{slate.50}",
+                        selectedBackground: "{slate.100}",
+                        selectedFocusBackground: "{slate.100}",
                         color: "{text.color}",
                         focusColor: "{text.hover.color}",
-                        selectedColor: "{highlight.color}",
+                        selectedColor: "{surface.800}",
                         selectedFocusColor: "{highlight.focus.color}",
                         icon: {
                             color: "{surface.600}",
