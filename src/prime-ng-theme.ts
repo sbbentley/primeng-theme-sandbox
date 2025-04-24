@@ -4456,13 +4456,12 @@ export const MyPreset = definePreset(Aura, {
         },
         togglebutton: {
             root: {
-                padding: "0.567rem 1rem",
+                padding: "0.5rem .75rem",
                 borderRadius: "{form.field.border.radius}",
                 gap: "0.5rem",
-                fontWeight: "500",
+                fontWeight: "600",
                 background: "{surface.100}",
                 borderColor: "{surface.100}",
-                color: "{form.field.color}",
                 hoverColor: "{form.field.color}",
                 checkedColor: "{form.field.color}",
                 checkedBorderColor: "{form.field.border.color}",
@@ -4477,15 +4476,7 @@ export const MyPreset = definePreset(Aura, {
                     color: "unset",
                     shadow: "none"
                 },
-                transitionDuration: "{form.field.transition.duration}",
-                sm: {
-                    fontSize: "{form.field.sm.font.size}",
-                    padding: "0.625rem 0.75rem"
-                },
-                lg: {
-                    fontSize: "{form.field.lg.font.size}",
-                    padding: "0.875rem 1.25rem"
-                }
+                transitionDuration: "{form.field.transition.duration}"
             },
             icon: {
                 color: "{text.muted.color}",
@@ -4495,16 +4486,25 @@ export const MyPreset = definePreset(Aura, {
             },
             content: {
                 left: "0.25rem",
-                top: "0.25rem",
+                top: "0.4rem",
                 checkedBackground: "transparent",
-                checkedShadow: "none"
+                checkedShadow: "0 2px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)"
             },
             colorScheme: {
                 light: {
                     root: {
                         hoverBackground: "{surface.200}",
-                        checkedBackground: "{surface.100}"
-                    }
+                        checkedBackground: "{surface.100}",
+                        color: "{surface.600}",
+                        sm: {
+                            fontSize: "{form.field.sm.font.size}",
+                            padding: "0.4rem .5rem"
+                        },
+                        lg: {
+                            fontSize: "{form.field.lg.font.size}",
+                            padding: "0.875rem 1.25rem"
+                        }
+                    },
                 },
                 dark: {
                     root: {
@@ -4552,7 +4552,7 @@ export const MyPreset = definePreset(Aura, {
                     },
                     handle: {
                         background: "{surface.0}",
-                        disabledBackground: "{{primary.contrast.color}",
+                        disabledBackground: "{primary.contrast.color}",
                         hoverBackground: "{surface.0}",
                         checkedBackground: "{primary.contrast.color}",
                         checkedHoverBackground: "{primary.contrast.color}",
