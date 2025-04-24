@@ -1658,7 +1658,7 @@ export const MyPreset = definePreset(Aura, {
                 height: "18px",
                 background: "{form.field.background}",
                 checkedBackground: "{primary.color}",
-                checkedHoverBackground: "{primary.color}",
+                checkedHoverBackground: "{primary.600}",
                 disabledBackground: "{form.field.disabled.background}",
                 filledBackground: "{form.field.filled.background}",
                 borderColor: "{form.field.border.color}",
@@ -1728,8 +1728,8 @@ export const MyPreset = definePreset(Aura, {
             colorScheme: {
                 light: {
                     root: {
-                        background: "{surface.200}",
-                        color: "{surface.900}"
+                        background: "{surface.50}",
+                        color: "{text.color}"
                     },
                     icon: {
                         color: "{surface.600}"

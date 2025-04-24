@@ -126,7 +126,8 @@ export class InputDemo implements OnInit {
         { name: 'United States', code: 'US' }
     ];
 
-    multiselectSelectedCountries!: Country[];
+    multiselectSelectedCountries: Country[] = [{ name: 'Australia', code: 'AU' },
+    { name: 'Brazil', code: 'BR' },];
 
     toggleValue: boolean = false;
 
