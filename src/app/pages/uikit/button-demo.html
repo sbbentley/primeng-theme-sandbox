@@ -2,15 +2,18 @@
     <div class="">
         <div class="card flex flex-col gap-4">
             <div class="font-semibold text-xl">Button Large - Default Button Size</div>
-            <div class="font-semibold text-m">Disabled color is not able to be set by theme. PrimeNG only sets an opacity when disabled</div>
+            <div class="gap-2">
+                <div class="font-semibold text-s">Disabled color is not able to be set by theme. PrimeNG only sets an opacity when disabled</div>
+                <div class="font-semibold text-s">Button font size isn't working in theme. I had to set in css</div>
+            </div>
             <div class="font-semibold text-l">Primary</div>
             <div class="flex flex-wrap gap-2">
                 <p-button label="Submit"/>
                 <p-button label="Bookmark" icon="pi pi-star-fill"/>
                 <p-button label="Bookmark" icon="pi pi-star-fill" iconPos="right"/>
                 <p-button label="Disabled" [disabled]="true"/>
-                <p-button label="Bookmark" icon="pi pi-star-fill"  [disabled]="true"/>
-                <p-button label="Bookmark" icon="pi pi-star-fill" iconPos="right"  [disabled]="true"/>
+                <p-button label="Bookmark" icon="pi pi-star-fill" [disabled]="true"/>
+                <p-button label="Bookmark" icon="pi pi-star-fill" iconPos="right" [disabled]="true"/>
             </div>
             <div class="font-semibold text-l">Secondary - Outlined</div>
             <div class="flex flex-wrap gap-2">

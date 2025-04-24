@@ -10,7 +10,7 @@ export const MyPreset = definePreset(Aura, {
             sm: "6px", // corner-radius/sm
             md: "9px", // corner-radius/md
             lg: "15px",  // corner-radius/lg
-            xl: "18px" // we dont have a Figma variable for this one, I assumed 3px for this
+            xl: "18px" // we dont have a Figma variable for this one, I assumed 18px for this
         },
         green: {
             // Note: green is currently referenced under "success", this would need to be changed to reference teal instead.
@@ -187,6 +187,7 @@ export const MyPreset = definePreset(Aura, {
             style: "none",
             color: "unset",
             offset: "0"
+						  
         },
         disabledOpacity: "0.38",
         iconSize: "1rem",
@@ -206,23 +207,23 @@ export const MyPreset = definePreset(Aura, {
         },
         formField: {
             paddingX: "0.75rem",
-            paddingY: "0.75rem",
+            paddingY: "0.5rem",
             sm: {
-                fontSize: "0.875rem",
+                fontSize: "14px",
                 paddingX: "0.625rem",
-                paddingY: "0.625rem"
+                paddingY: "0.375rem"
             },
             lg: {
-                fontSize: "1.125rem",
-                paddingX: "0.825rem",
-                paddingY: "0.825rem"
+                fontSize: "14px",
+                paddingX: "0.875rem",
+                paddingY: "0.625rem"
             },
-            borderRadius: "{border.radius.sm}",
+            borderRadius: "{border.radius.md}",
             focusRing: {
-                width: "2px",
+                width: "1px",
                 style: "solid",
                 color: "{primary.color}",
-                offset: "-2px",
+                offset: "0px",
                 shadow: "none"
             },
             transitionDuration: "{transition.duration}"
@@ -876,18 +877,18 @@ export const MyPreset = definePreset(Aura, {
                 borderRadius: "{form.field.border.radius}",
                 roundedBorderRadius: "2rem",
                 gap: "0.5rem",
-                paddingX: "1rem",
-                paddingY: "0.71rem",
+                paddingX: "9px",
+                paddingY: "9px",
                 iconOnlyWidth: "3rem",
                 sm: {
                     fontSize: "{form.field.sm.font.size}",
-                    paddingX: "0.500rem",
-                    paddingY: "0.500rem"
+                    paddingX: "{form.field.sm.padding.x}",
+                    paddingY: "{form.field.sm.padding.y}"
                 },
                 lg: {
                     fontSize: "{form.field.lg.font.size}",
-                    paddingX: "0.825rem",
-                    paddingY: "0.825rem"
+                    paddingX: "{form.field.lg.padding.x}",
+                    paddingY: "{form.field.lg.padding.y}"
                 },
                 label: {
                     fontWeight: "500"
