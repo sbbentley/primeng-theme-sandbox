@@ -329,7 +329,7 @@ export const MyPreset = definePreset(Aura, {
                     filledHoverBackground: "{surface.200}",
                     filledFocusBackground: "{surface.100}",
                     borderColor: "{surface.200}",
-                    hoverBorderColor: "{surface.500}",
+                    hoverBorderColor: "{primary.color}",
                     focusBorderColor: "{primary.color}",
                     invalidBorderColor: "{red.700}",
                     color: "{surface.700}",
