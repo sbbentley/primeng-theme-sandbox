@@ -10,7 +10,7 @@ export const MyPreset = definePreset(Aura, {
             sm: "6px", // corner-radius/sm
             md: "9px", // corner-radius/md
             lg: "15px",  // corner-radius/lg
-            xl: "18px" // we dont have a Figma variable for this one, I assumed 3px for this
+            xl: "18px" // we dont have a Figma variable for this one, I assumed 18px for this
         },
         green: {
             // Note: green is currently referenced under "success", this would need to be changed to reference teal instead.
@@ -187,6 +187,7 @@ export const MyPreset = definePreset(Aura, {
             style: "none",
             color: "unset",
             offset: "0"
+						  
         },
         disabledOpacity: "0.38",
         iconSize: "1rem",
@@ -206,23 +207,23 @@ export const MyPreset = definePreset(Aura, {
         },
         formField: {
             paddingX: "0.75rem",
-            paddingY: "0.75rem",
+            paddingY: "0.5rem",
             sm: {
-                fontSize: "0.875rem",
+                fontSize: "14px",
                 paddingX: "0.625rem",
-                paddingY: "0.625rem"
+                paddingY: "0.375rem"
             },
             lg: {
-                fontSize: "1.125rem",
-                paddingX: "0.825rem",
-                paddingY: "0.825rem"
+                fontSize: "14px",
+                paddingX: "0.875rem",
+                paddingY: "0.625rem"
             },
-            borderRadius: "{border.radius.sm}",
+            borderRadius: "{border.radius.md}",
             focusRing: {
-                width: "2px",
+                width: "1px",
                 style: "solid",
                 color: "{primary.color}",
-                offset: "-2px",
+                offset: "0px",
                 shadow: "none"
             },
             transitionDuration: "{transition.duration}"
@@ -877,17 +878,17 @@ export const MyPreset = definePreset(Aura, {
                 roundedBorderRadius: "2rem",
                 gap: "0.5rem",
                 paddingX: "1rem",
-                paddingY: "0.71rem",
+                paddingY: "0.625rem",
                 iconOnlyWidth: "3rem",
                 sm: {
                     fontSize: "{form.field.sm.font.size}",
-                    paddingX: "0.500rem",
-                    paddingY: "0.500rem"
+                    paddingX: "{form.field.sm.padding.x}",
+                    paddingY: "{form.field.sm.padding.y}"
                 },
                 lg: {
                     fontSize: "{form.field.lg.font.size}",
-                    paddingX: "0.825rem",
-                    paddingY: "0.825rem"
+                    paddingX: "{form.field.lg.padding.x}",
+                    paddingY: "{form.field.lg.padding.y}"
                 },
                 label: {
                     fontWeight: "500"
@@ -4455,13 +4456,12 @@ export const MyPreset = definePreset(Aura, {
         },
         togglebutton: {
             root: {
-                padding: "0.567rem 1rem",
+                padding: "0.65rem 1rem",
                 borderRadius: "{form.field.border.radius}",
                 gap: "0.5rem",
-                fontWeight: "500",
+                fontWeight: "600",
                 background: "{surface.100}",
                 borderColor: "{surface.100}",
-                color: "{form.field.color}",
                 hoverColor: "{form.field.color}",
                 checkedColor: "{form.field.color}",
                 checkedBorderColor: "{form.field.border.color}",
@@ -4476,15 +4476,7 @@ export const MyPreset = definePreset(Aura, {
                     color: "unset",
                     shadow: "none"
                 },
-                transitionDuration: "{form.field.transition.duration}",
-                sm: {
-                    fontSize: "{form.field.sm.font.size}",
-                    padding: "0.625rem 0.75rem"
-                },
-                lg: {
-                    fontSize: "{form.field.lg.font.size}",
-                    padding: "0.875rem 1.25rem"
-                }
+                transitionDuration: "{form.field.transition.duration}"
             },
             icon: {
                 color: "{text.muted.color}",
@@ -4494,16 +4486,25 @@ export const MyPreset = definePreset(Aura, {
             },
             content: {
                 left: "0.25rem",
-                top: "0.25rem",
+                top: "0.4rem",
                 checkedBackground: "transparent",
-                checkedShadow: "none"
+                checkedShadow: "0 2px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)"
             },
             colorScheme: {
                 light: {
                     root: {
                         hoverBackground: "{surface.200}",
-                        checkedBackground: "{surface.100}"
-                    }
+                        checkedBackground: "{surface.100}",
+                        color: "{surface.600}",
+                        sm: {
+                            fontSize: "{form.field.sm.font.size}",
+                            padding: "0.625rem 0.75rem"
+                        },
+                        lg: {
+                            fontSize: "{form.field.lg.font.size}",
+                            padding: "0.875rem 1.25rem"
+                        }
+                    },
                 },
                 dark: {
                     root: {
@@ -4551,7 +4552,7 @@ export const MyPreset = definePreset(Aura, {
                     },
                     handle: {
                         background: "{surface.0}",
-                        disabledBackground: "{{primary.contrast.color}",
+                        disabledBackground: "{primary.contrast.color}",
                         hoverBackground: "{surface.0}",
                         checkedBackground: "{primary.contrast.color}",
                         checkedHoverBackground: "{primary.contrast.color}",
