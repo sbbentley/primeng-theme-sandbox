@@ -954,17 +954,17 @@ export const MyPreset = definePreset(Aura, {
                             }
                         },
                         success: {
-                            background: "{green.500}",
-                            hoverBackground: "{green.400}",
-                            activeBackground: "{green.300}",
-                            borderColor: "{green.500}",
-                            hoverBorderColor: "{green.400}",
-                            activeBorderColor: "{green.300}",
+                            background: "{teal.500}",
+                            hoverBackground: "{teal.400}",
+                            activeBackground: "{teal.300}",
+                            borderColor: "{teal.500}",
+                            hoverBorderColor: "{teal.400}",
+                            activeBorderColor: "{teal.300}",
                             color: "#ffffff",
                             hoverColor: "#ffffff",
                             activeColor: "#ffffff",
                             focusRing: {
-                                color: "{green.500}",
+                                color: "{teal.500}",
                                 shadow: "none"
                             }
                         },
@@ -999,17 +999,17 @@ export const MyPreset = definePreset(Aura, {
                             }
                         },
                         danger: {
-                            background: "{red.500}",
+                            background: "{red.700}",
                             hoverBackground: "{red.400}",
                             activeBackground: "{red.300}",
-                            borderColor: "{red.500}",
+                            borderColor: "{red.700}",
                             hoverBorderColor: "{red.400}",
                             activeBorderColor: "{red.300}",
                             color: "#ffffff",
                             hoverColor: "#ffffff",
                             activeColor: "#ffffff",
                             focusRing: {
-                                color: "{red.500}",
+                                color: "{red.700}",
                                 shadow: "none"
                             }
                         },
