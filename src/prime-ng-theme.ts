@@ -802,7 +802,7 @@ export const MyPreset = definePreset(Aura, {
                         color: "{surface.0}"
                     },
                     danger: {
-                        background: "{red.500}",
+                        background: "{red.700}",
                         color: "{surface.0}"
                     },
                     contrast: {
@@ -4346,20 +4346,20 @@ export const MyPreset = definePreset(Aura, {
                         color: "{surface.600}"
                     },
                     success: {
-                        background: "{green.500}",
-                        color: "{surface.0}"
+                        background: "{teal.100}",
+                        color: "{teal.700}"
                     },
                     info: {
-                        background: "{blue.500}",
-                        color: "{surface.0}"
+                        background: "{blue.100}",
+                        color: "{blue.700}"
                     },
                     warn: {
-                        background: "{orange.500}",
-                        color: "{surface.0}"
+                        background: "{orange.100}",
+                        color: "{orange.900}"
                     },
                     danger: {
-                        background: "{red.500}",
-                        color: "{surface.0}"
+                        background: "{red.100}",
+                        color: "{red.900}"
                     },
                     contrast: {
                         background: "{surface.950}",
