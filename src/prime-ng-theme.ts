@@ -354,8 +354,8 @@ export const MyPreset = definePreset(Aura, {
                 },
                 content: {
                     background: "{surface.0}",
-                    hoverBackground: "{stone.50}",
-                    borderColor: "{surface.300}",
+                    hoverBackground: "{slate.50}",
+                    borderColor: "{surface.100}",
                     color: "{text.color}",
                     hoverColor: "{text.hover.color}"
                 },
@@ -397,15 +397,15 @@ export const MyPreset = definePreset(Aura, {
                 },
                 navigation: {
                     item: {
-                        focusBackground: "{surface.100}",
-                        activeBackground: "{surface.200}",
+                        focusBackground: "{slate.50}",
+                        activeBackground: "{slate.100}",
                         color: "{text.color}",
                         focusColor: "{text.hover.color}",
                         activeColor: "{text.hover.color}",
                         icon: {
-                            color: "{surface.600}",
-                            focusColor: "{surface.600}",
-                            activeColor: "{surface.600}"
+                            color: "{surface.700}",
+                            focusColor: "{surface.700}",
+                            activeColor: "{surface.700}"
                         }
                     },
                     submenuLabel: {
