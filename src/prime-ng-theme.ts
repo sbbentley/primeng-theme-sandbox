@@ -3536,8 +3536,8 @@ export const MyPreset = definePreset(Aura, {
             },
             navButton: {
                 background: "transparent",
-                hoverBackground: "{content.hover.background}",
-                selectedBackground: "{highlight.background}",
+                hoverBackground: "{slate.50}",
+                selectedBackground: "{slate.100}",
                 color: "{text.muted.color}",
                 hoverColor: "{text.hover.muted.color}",
                 selectedColor: "{highlight.color}",
