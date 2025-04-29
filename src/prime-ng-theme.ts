@@ -351,7 +351,7 @@ export const MyPreset = definePreset(Aura, {
                 },
                 content: {
                     background: "{surface.0}",
-                    hoverBackground: "{surface.100}",
+                    hoverBackground: "{stone.50}",
                     borderColor: "{surface.300}",
                     color: "{text.color}",
                     hoverColor: "{text.hover.color}"
@@ -1947,7 +1947,7 @@ export const MyPreset = definePreset(Aura, {
             row: {
                 background: "{content.background}",
                 hoverBackground: "{content.hover.background}",
-                selectedBackground: "{highlight.background}",
+                selectedBackground: "{primary.50}",
                 color: "{content.color}",
                 hoverColor: "{content.hover.color}",
                 selectedColor: "{highlight.color}",

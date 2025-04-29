@@ -18,6 +18,8 @@ import { IconFieldModule } from 'primeng/iconfield';
 import { TagModule } from 'primeng/tag';
 import { Customer, CustomerService, Representative } from '../service/customer.service';
 import { Product, ProductService } from '../service/product.service';
+import { TableRowCollapseEvent, TableRowExpandEvent } from 'primeng/table';
+
 
 interface expandedRows {
     [key: string]: boolean;
@@ -75,7 +77,7 @@ export class TableDemo implements OnInit {
 
     rowGroupMetadata: any;
 
-    expandedRows: expandedRows = {};
+    expandedRows = {};
 
     activityValues: number[] = [0, 100];
 
@@ -89,7 +91,8 @@ export class TableDemo implements OnInit {
 
     constructor(
         private customerService: CustomerService,
-        private productService: ProductService
+        private productService: ProductService,
+        private messageService: MessageService
     ) {}
 
     ngOnInit() {
@@ -155,12 +158,12 @@ export class TableDemo implements OnInit {
     }
 
     expandAll() {
-        if (!this.isExpanded) {
-            this.products.forEach((product) => (product && product.name ? (this.expandedRows[product.name] = true) : ''));
-        } else {
-            this.expandedRows = {};
-        }
-        this.isExpanded = !this.isExpanded;
+        this.expandedRows = this.products.reduce((acc, p) => (acc[p.id] = true) && acc, {});
+        this.isExpanded = true;
+    }
+
+    collapseAll() {
+        this.expandedRows = {};
     }
 
     formatCurrency(value: number) {
@@ -216,5 +219,26 @@ export class TableDemo implements OnInit {
         }
 
         return total;
+    }
+
+    onRowExpand(event: TableRowExpandEvent) {
+        this.messageService.add({ severity: 'info', summary: 'Product Expanded', detail: event.data.name, life: 3000 });
+    }
+
+    onRowCollapse(event: TableRowCollapseEvent) {
+        this.messageService.add({ severity: 'success', summary: 'Product Collapsed', detail: event.data.name, life: 3000 });
+    }
+    
+    getStatusSeverity(status: string) {
+        switch (status) {
+            case 'PENDING':
+                return 'warn';
+            case 'DELIVERED':
+                return 'success';
+            case 'CANCELLED':
+                return 'danger';
+            default:
+                return undefined;
+        }
     }
 }
