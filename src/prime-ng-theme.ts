@@ -12,6 +12,9 @@ export const MyPreset = definePreset(Aura, {
             lg: "15px",  // corner-radius/lg
             xl: "18px" // we dont have a Figma variable for this one, I assumed 18px for this
         },
+        basic: {
+            brand: "#E50082"
+        },
         green: {
             // Note: green is currently referenced under "success", this would need to be changed to reference teal instead.
             50: "#EEF5EE", // --hcm-color-green-5
@@ -1920,14 +1923,14 @@ export const MyPreset = definePreset(Aura, {
                 background: "{content.background}",
                 borderColor: "{datatable.border.color}",
                 color: "{content.color}",
-                borderWidth: "0 0 1px 0",
+                borderWidth: "0 0 0px 0",
                 padding: "0.75rem 1rem"
             },
             headerCell: {
                 background: "{content.background}",
                 hoverBackground: "{content.hover.background}",
                 selectedBackground: "{highlight.background}",
-                borderColor: "{datatable.border.color}",
+                borderColor: "{basic.brand}",
                 color: "{content.color}",
                 hoverColor: "{content.hover.color}",
                 selectedColor: "{highlight.color}",
@@ -2062,7 +2065,7 @@ export const MyPreset = definePreset(Aura, {
             colorScheme: {
                 light: {
                     root: {
-                        borderColor: "{content.border.color}"
+                        borderColor: "{gray.100}"
                     },
                     row: {
                         stripedBackground: "{surface.50}"
