@@ -3105,9 +3105,9 @@ export const MyPreset = definePreset(Aura, {
             colorScheme: {
                 light: {
                     info: {
-                        background: "color-mix(in srgb, {blue.50}, transparent 5%)",
+                        background: "color-mix(in srgb, {blue.100}, transparent 5%)",
                         borderColor: "{blue.200}",
-                        color: "{blue.600}",
+                        color: "{blue.700}",
                         shadow: "none",
                         closeButton: {
                             hoverBackground: "{blue.100}",
@@ -3117,35 +3117,35 @@ export const MyPreset = definePreset(Aura, {
                             }
                         },
                         outlined: {
-                            color: "{blue.600}",
-                            borderColor: "{blue.600}"
+                            color: "{blue.700}",
+                            borderColor: "{blue.700}"
                         },
                         simple: {
-                            color: "{blue.600}"
+                            color: "{blue.700}"
                         }
                     },
                     success: {
-                        background: "color-mix(in srgb, {green.50}, transparent 5%)",
-                        borderColor: "{green.200}",
-                        color: "{green.600}",
+                        background: "color-mix(in srgb, {teal.100}, transparent 5%)",
+                        borderColor: "{teal.200}",
+                        color: "{teal.600}",
                         shadow: "none",
                         closeButton: {
-                            hoverBackground: "{green.100}",
+                            hoverBackground: "{teal.100}",
                             focusRing: {
-                                color: "{green.600}",
+                                color: "{teal.600}",
                                 shadow: "none"
                             }
                         },
                         outlined: {
-                            color: "{green.600}",
-                            borderColor: "{green.600}"
+                            color: "{teal.600}",
+                            borderColor: "{teal.600}"
                         },
                         simple: {
-                            color: "{green.600}"
+                            color: "{teal.600}"
                         }
                     },
                     warn: {
-                        background: "color-mix(in srgb,{orange.50}, transparent 5%)",
+                        background: "color-mix(in srgb,{orange.100}, transparent 5%)",
                         borderColor: "{orange.200}",
                         color: "{orange.900}",
                         shadow: "none",
@@ -3165,9 +3165,9 @@ export const MyPreset = definePreset(Aura, {
                         }
                     },
                     error: {
-                        background: "color-mix(in srgb, {red.50}, transparent 5%)",
+                        background: "color-mix(in srgb, {red.100}, transparent 5%)",
                         borderColor: "{red.200}",
-                        color: "{red.600}",
+                        color: "{red.900}",
                         shadow: "none",
                         closeButton: {
                             hoverBackground: "{red.100}",
@@ -3177,11 +3177,11 @@ export const MyPreset = definePreset(Aura, {
                             }
                         },
                         outlined: {
-                            color: "{red.600}",
-                            borderColor: "{red.600}"
+                            color: "{red.900}",
+                            borderColor: "{red.900}"
                         },
                         simple: {
-                            color: "{red.600}"
+                            color: "{red.900}"
                         }
                     },
                     secondary: {
