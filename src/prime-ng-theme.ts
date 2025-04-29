@@ -4871,7 +4871,7 @@ export const MyPreset = definePreset(Aura, {
                     info: {
                         background: "{blue.50}",
                         borderColor: "{blue.200}",
-                        color: "{blue.600}",
+                        color: "{blue.700}",
                         detailColor: "{surface.700}",
                         shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
                         closeButton: {
@@ -4883,21 +4883,21 @@ export const MyPreset = definePreset(Aura, {
                         }
                     },
                     success: {
-                        background: "{green.50}",
-                        borderColor: "{green.200}",
-                        color: "{green.600}",
+                        background: "{teal.50}",
+                        borderColor: "{teal.200}",
+                        color: "{teal.700}",
                         detailColor: "{surface.700}",
                         shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
                         closeButton: {
-                            hoverBackground: "{green.100}",
+                            hoverBackground: "{teal.100}",
                             focusRing: {
-                                color: "{green.600}",
+                                color: "{teal.600}",
                                 shadow: "none"
                             }
                         }
                     },
                     warn: {
-                        background: "{orange.50}",
+                        background: "{orange.100}",
                         borderColor: "{orange.200}",
                         color: "{orange.900}",
                         detailColor: "{surface.700}",
@@ -4913,7 +4913,7 @@ export const MyPreset = definePreset(Aura, {
                     error: {
                         background: "{red.50}",
                         borderColor: "{red.200}",
-                        color: "{red.600}",
+                        color: "{red.700}",
                         detailColor: "{surface.700}",
                         shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
                         closeButton: {
