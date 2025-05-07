@@ -30,6 +30,7 @@ import { CountryService } from '../service/country.service';
 import { NodeService } from '../service/node.service';
 import { TreeNode } from 'primeng/api';
 import { Country } from '../service/customer.service';
+import { CardModule } from 'primeng/card';
 
 @Component({
     selector: 'app-input-demo',
@@ -61,7 +62,8 @@ import { Country } from '../service/customer.service';
         MultiSelectModule,
         ListboxModule,
         InputGroupAddonModule,
-        TextareaModule
+        TextareaModule,
+        CardModule
     ],
     templateUrl: './input-demo.html',
     providers: [CountryService, NodeService]

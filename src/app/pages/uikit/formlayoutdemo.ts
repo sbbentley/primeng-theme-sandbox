@@ -7,11 +7,12 @@ import { FormsModule } from '@angular/forms';
 import { TextareaModule } from 'primeng/textarea';
 import { Fieldset } from 'primeng/fieldset';
 import { Panel } from 'primeng/panel';
+import { CardModule } from 'primeng/card';
 
 @Component({
     selector: 'app-formlayout-demo',
     standalone: true,
-    imports: [InputTextModule, FluidModule, ButtonModule, SelectModule, FormsModule, TextareaModule, Panel],
+    imports: [InputTextModule, FluidModule, ButtonModule, SelectModule, FormsModule, TextareaModule, Panel, CardModule],
     templateUrl: './form-layout.html'
 })
 export class FormLayoutDemo {
