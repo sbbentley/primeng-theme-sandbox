@@ -4004,7 +4004,7 @@ export const MyPreset = definePreset(Aura, {
             },
             separator: {
                 background: "{content.border.color}",
-                activeBackground: "{primary.color}",
+                activeBackground: "{basic.brand}",
                 margin: "0 0 0 1.625rem",
                 size: "2px"
             },
@@ -4030,8 +4030,8 @@ export const MyPreset = definePreset(Aura, {
                 fontWeight: "500"
             },
             stepNumber: {
-                activeBackground: "{primary.color}",
-                activeBorderColor: "{primary.color}",
+                activeBackground: "{basic.brand}",
+                activeBorderColor: "{basic.brand}",
                 activeColor: "{primary.contrast.color}",
                 size: "2rem",
                 fontSize: "1.143rem",
@@ -4161,10 +4161,10 @@ export const MyPreset = definePreset(Aura, {
                 borderWidth: "0 0 1px 0",
                 borderColor: "{content.border.color}",
                 hoverBorderColor: "{content.border.color}",
-                activeBorderColor: "{primary.color}",
-                color: "{text.color}",
+                activeBorderColor: "{basic.brand}",
+                color: "{gray.500}",
                 hoverColor: "{text.color}",
-                activeColor: "{primary.color}",
+                activeColor: "{surface.950}",
                 padding: "1rem 1.25rem",
                 fontWeight: "600",
                 margin: "0 0 -1px 0",
@@ -4206,7 +4206,7 @@ export const MyPreset = definePreset(Aura, {
             activeBar: {
                 height: "2px",
                 bottom: "-1px",
-                background: "{primary.color}"
+                background: "{basic.brand}"
             }
         },
         tabview: {

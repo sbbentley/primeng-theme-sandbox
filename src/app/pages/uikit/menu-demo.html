@@ -17,24 +17,7 @@
     <div class="flex flex-col md:flex-row gap-8">
         <div class="md:w-1/2">
             <p-card header="Steps">
-                <p-stepper [value]="1">
-                    <p-step-list>
-                        <p-step [value]="1">Header I</p-step>
-                        <p-step [value]="2">Header II</p-step>
-                        <p-step [value]="3">Header III</p-step>
-                    </p-step-list>
-                </p-stepper>
-            </p-card>
-        </div>
-        <div class="md:w-1/2">
-            <p-card header="TabMenu">
-                <p-tabs [value]="0">
-                    <p-tablist>
-                        <p-tab [value]="0">Header I</p-tab>
-                        <p-tab [value]="1">Header II</p-tab>
-                        <p-tab [value]="2">Header III</p-tab>
-                    </p-tablist>
-                </p-tabs>
+                <p-steps [model]="items" [readonly]="true" />
             </p-card>
         </div>
     </div>

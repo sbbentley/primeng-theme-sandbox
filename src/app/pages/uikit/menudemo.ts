@@ -32,9 +32,6 @@ import { CardModule } from 'primeng/card';
         TabsModule,
         MenubarModule,
         InputTextModule,
-        TabsModule,
-        StepperModule,
-        TabsModule,
         IconField,
         InputIcon,
         CardModule

@@ -15,6 +15,7 @@ import { PanelModule } from 'primeng/panel';
 import { RippleModule } from 'primeng/ripple';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { SplitterModule } from 'primeng/splitter';
+import { StepperModule } from 'primeng/stepper';
 import { TabsModule } from 'primeng/tabs';
 import { ToolbarModule } from 'primeng/toolbar';
 
@@ -38,7 +39,8 @@ import { ToolbarModule } from 'primeng/toolbar';
         TabsModule,
         IconFieldModule,
         InputIconModule,
-        CardModule
+        CardModule,
+        StepperModule
     ],
     templateUrl: `./panels-demo.html`
 })

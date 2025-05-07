@@ -162,4 +162,22 @@
             </ng-template>
         </p-splitter>
     </p-card>
+    <p-card header="Stepper">
+        <p-stepper [value]="1">
+            <p-step-list>
+                <p-step [value]="1">Header I</p-step>
+                <p-step [value]="2">Header II</p-step>
+                <p-step [value]="3">Header III</p-step>
+            </p-step-list>
+        </p-stepper>
+    </p-card>
+    <p-card header="Tabs">
+        <p-tabs [value]="0">
+            <p-tablist>
+                <p-tab [value]="0">Header I</p-tab>
+                <p-tab [value]="1">Header II</p-tab>
+                <p-tab [value]="2">Header III</p-tab>
+            </p-tablist>
+        </p-tabs>
+    </p-card>
 </div>
