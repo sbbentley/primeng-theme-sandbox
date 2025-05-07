@@ -232,14 +232,14 @@ export const MyPreset = definePreset(Aura, {
             transitionDuration: "{transition.duration}"
         },
         list: {
-            padding: "0.5rem 0",
+            padding: "0.5rem .5rem",
             gap: "0",
             header: {
                 padding: "0.75rem 1rem"
             },
             option: {
                 padding: "0.75rem 1rem",
-                borderRadius: "{border.radius.none}"
+                borderRadius: "{border.radius.sm}"
             },
             optionGroup: {
                 padding: "0.75rem 1rem",
