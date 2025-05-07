@@ -1,0 +1,40 @@
+<p-fluid class="grid grid-cols-12 gap-8">
+    <div class="col-span-12 xl:col-span-6">
+        <p-card header="Linear">
+            <p-chart type="line" [data]="lineData" [options]="lineOptions"></p-chart>
+        </p-card>
+    </div>
+    <div class="col-span-12 xl:col-span-6">
+        <p-card header="Bar">
+            <p-chart type="bar" [data]="barData" [options]="barOptions"></p-chart>
+        </p-card>
+    </div>
+    <div class="col-span-12 xl:col-span-6">
+        <p-card header="Pie">
+            <div class="flex flex-col items-center">
+                <p-chart type="pie" [data]="pieData" [options]="pieOptions"></p-chart>
+            </div>
+        </p-card>
+    </div>
+    <div class="col-span-12 xl:col-span-6">
+        <p-card header="Doughnut">
+            <div class="flex flex-col items-center">
+                <p-chart type="doughnut" [data]="pieData" [options]="pieOptions"></p-chart>
+            </div>
+        </p-card>
+    </div>
+    <div class="col-span-12 xl:col-span-6">
+        <p-card header="Polar Area">
+            <div class="flex flex-col items-center">
+                <p-chart type="polarArea" [data]="polarData" [options]="polarOptions"></p-chart>
+            </div>
+        </p-card>
+    </div>
+    <div class="col-span-12 xl:col-span-6">
+        <p-card header="Radar">
+            <div class="flex flex-col items-center">
+                <p-chart type="radar" [data]="radarData" [options]="radarOptions"></p-chart>
+            </div>
+        </p-card>
+    </div>
+</p-fluid>

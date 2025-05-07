@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { CardModule } from 'primeng/card';
 
 @Component({
     selector: 'app-documentation',
     standalone: true,
-    imports: [CommonModule],
+    imports: [CommonModule, CardModule],
     template: `
-        <div class="card">
+        <p-card>
             <div class="font-semibold text-2xl mb-4">Documentation</div>
             <div class="font-semibold text-xl mb-4">Get Started</div>
             <p class="text-lg mb-4">Sakai is an application template for Angular and is distributed as a CLI project. Current versions is Angular v19 with PrimeNG v19. In case CLI is not installed already, use the command below to set it up.</p>
@@ -49,7 +50,7 @@ ng serve</code></pre>
             <p class="text-lg mb-4">
                 CSS variables used in the template are derived from the applied PrimeNG theme. Customize them through the CSS variables in <span class="bg-highlight px-2 py-1 rounded-border not-italic text-base">src/assets/layout/variables</span>.
             </p>
-        </div>
+        </p-card>
     `,
     styles: `
         @media screen and (max-width: 991px) {
