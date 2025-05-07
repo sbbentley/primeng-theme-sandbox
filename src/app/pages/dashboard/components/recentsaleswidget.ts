@@ -4,12 +4,13 @@ import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
 import { CommonModule } from '@angular/common';
 import { Product, ProductService } from '../../service/product.service';
+import { CardModule } from 'primeng/card';
 
 @Component({
     standalone: true,
     selector: 'app-recent-sales-widget',
-    imports: [CommonModule, TableModule, ButtonModule, RippleModule],
-    template: `<div class="card !mb-8">
+    imports: [CommonModule, TableModule, ButtonModule, RippleModule, CardModule],
+    template: `<p-card>
         <div class="font-semibold text-xl mb-4">Recent Sales</div>
         <p-table [value]="products" [paginator]="true" [rows]="5" responsiveLayout="scroll">
             <ng-template #header>
@@ -33,7 +34,7 @@ import { Product, ProductService } from '../../service/product.service';
                 </tr>
             </ng-template>
         </p-table>
-    </div>`,
+    ></p-card>`,
     providers: [ProductService]
 })
 export class RecentSalesWidget {

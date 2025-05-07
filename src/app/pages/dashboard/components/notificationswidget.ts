@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
 import { MenuModule } from 'primeng/menu';
 
 @Component({
     standalone: true,
     selector: 'app-notifications-widget',
-    imports: [ButtonModule, MenuModule],
-    template: `<div class="card">
+    imports: [ButtonModule, MenuModule, CardModule],
+    template: `<p-card>
         <div class="flex items-center justify-between mb-6">
             <div class="font-semibold text-xl">Notifications</div>
             <div>
@@ -70,7 +71,7 @@ import { MenuModule } from 'primeng/menu';
                 <span class="text-surface-900 dark:text-surface-0 leading-normal"><span class="text-primary font-bold">12</span> users have added your products to their wishlist.</span>
             </li>
         </ul>
-    </div>`
+    </p-card>`
 })
 export class NotificationsWidget {
     items = [
