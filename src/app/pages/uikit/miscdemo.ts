@@ -4,6 +4,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 import { BadgeModule } from 'primeng/badge';
 import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
 import { ChipModule } from 'primeng/chip';
 import { OverlayBadgeModule } from 'primeng/overlaybadge';
 import { ProgressBarModule } from 'primeng/progressbar';
@@ -15,7 +16,7 @@ import { TagModule } from 'primeng/tag';
 @Component({
     selector: 'app-misc-demo',
     standalone: true,
-    imports: [CommonModule, ProgressBarModule, BadgeModule, AvatarModule, ScrollPanelModule, TagModule, ChipModule, ButtonModule, SkeletonModule, AvatarGroupModule, ScrollTopModule, OverlayBadgeModule],
+    imports: [CommonModule, ProgressBarModule, BadgeModule, AvatarModule, ScrollPanelModule, TagModule, ChipModule, ButtonModule, SkeletonModule, AvatarGroupModule, ScrollTopModule, OverlayBadgeModule, CardModule],
     templateUrl: './misc-demo.html',
 })
 export class MiscDemo {

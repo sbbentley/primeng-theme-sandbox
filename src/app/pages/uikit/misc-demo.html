@@ -1,5 +1,5 @@
-<div class="card">
-    <div class="font-semibold text-xl mb-4">ProgressBar</div>
+<div class="flex flex-col gap-8">
+<p-card header="ProgressBar">
     <div class="flex flex-col md:flex-row gap-4">
         <div class="md:w-1/2">
             <p-progressbar [value]="value" [showValue]="true"></p-progressbar>
@@ -8,12 +8,11 @@
             <p-progressbar [value]="50" [showValue]="false"></p-progressbar>
         </div>
     </div>
-</div>
+</p-card>
 
 <div class="flex flex-col md:flex-row gap-8">
-    <div class="md:w-1/2">
-        <div class="card">
-            <div class="font-semibold text-xl mb-4">Badge</div>
+    <div class="md:w-1/2 flex flex-col gap-8">
+        <p-card header="Badge">
             <div class="flex gap-2">
                 <p-badge value="2"></p-badge>
                 <p-badge value="8" severity="success"></p-badge>
@@ -38,7 +37,8 @@
             <div class="font-semibold my-4">Button</div>
             <div class="flex gap-2">
                 <p-button label="Emails" badge="8"></p-button>
-                <p-button label="Messages" icon="pi pi-users" severity="warn" badge="8" badgeSeverity="danger"></p-button>
+                <p-button label="Messages" icon="pi pi-users" severity="warn" badge="8"
+                    badgeSeverity="danger"></p-button>
             </div>
 
             <div class="font-semibold my-4">Sizes</div>
@@ -47,33 +47,39 @@
                 <p-badge [value]="4" badgeSize="large" severity="warn"></p-badge>
                 <p-badge [value]="6" badgeSize="xlarge" severity="success"></p-badge>
             </div>
-        </div>
+        </p-card>
 
-        <div class="card">
-            <div class="font-semibold text-xl mb-4">Avatar</div>
+        <p-card header="Avatar">
             <div class="font-semibold mb-4">Group</div>
             <p-avatargroup styleClass="mb-4">
-                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" size="large" shape="circle"></p-avatar>
-                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/asiyajavayant.png" size="large" shape="circle"></p-avatar>
-                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png" size="large" shape="circle"></p-avatar>
-                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/ionibowcher.png" size="large" shape="circle"></p-avatar>
-                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/xuxuefeng.png" size="large" shape="circle"></p-avatar>
-                <p-avatar label="+2" shape="circle" size="large" [style]="{ 'background-color': '#9c27b0', color: '#ffffff' }"></p-avatar>
+                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" size="large"
+                    shape="circle"></p-avatar>
+                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/asiyajavayant.png" size="large"
+                    shape="circle"></p-avatar>
+                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png" size="large"
+                    shape="circle"></p-avatar>
+                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/ionibowcher.png" size="large"
+                    shape="circle"></p-avatar>
+                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/xuxuefeng.png" size="large"
+                    shape="circle"></p-avatar>
+                <p-avatar label="+2" shape="circle" size="large"
+                    [style]="{ 'background-color': '#9c27b0', color: '#ffffff' }"></p-avatar>
             </p-avatargroup>
 
             <div class="font-semibold my-4">Label - Circle</div>
             <p-avatar class="mr-2" label="P" size="xlarge" shape="circle"></p-avatar>
-            <p-avatar class="mr-2" label="V" size="large" [style]="{ 'background-color': '#2196F3', color: '#ffffff' }" shape="circle"></p-avatar>
-            <p-avatar class="mr-2" label="U" [style]="{ 'background-color': '#9c27b0', color: '#ffffff' }" shape="circle"></p-avatar>
+            <p-avatar class="mr-2" label="V" size="large" [style]="{ 'background-color': '#2196F3', color: '#ffffff' }"
+                shape="circle"></p-avatar>
+            <p-avatar class="mr-2" label="U" [style]="{ 'background-color': '#9c27b0', color: '#ffffff' }"
+                shape="circle"></p-avatar>
 
             <div class="font-semibold my-4">Icon - Badge</div>
             <p-overlaybadge value="4" severity="danger" class="inline-flex">
                 <p-avatar label="U" size="xlarge" />
             </p-overlaybadge>
-        </div>
+        </p-card>
 
-        <div class="card">
-            <div class="font-semibold text-xl mb-4">Skeleton</div>
+        <p-card header="Skeleton">
             <div class="rounded-border border border-surface p-6">
                 <div class="flex mb-4">
                     <p-skeleton shape="circle" size="4rem" styleClass="mr-2"></p-skeleton>
@@ -89,11 +95,10 @@
                     <p-skeleton width="4rem" height="2rem"></p-skeleton>
                 </div>
             </div>
-        </div>
+        </p-card>
     </div>
-    <div class="md:w-1/2">
-        <div class="card">
-            <div class="font-semibold text-xl mb-4">Tag</div>
+    <div class="md:w-1/2 flex flex-col gap-8">
+        <p-card header="Tag">
             <div class="font-semibold mb-4">Default</div>
             <div class="flex gap-2">
                 <p-tag value="Primary"></p-tag>
@@ -123,10 +128,9 @@
                 <p-tag icon="pi pi-exclamation-triangle" severity="warn" value="Warning"></p-tag>
                 <p-tag icon="pi pi-times" severity="danger" value="Danger"></p-tag>
             </div>
-        </div>
+        </p-card>
 
-        <div class="card">
-            <div class="font-semibold text-xl mb-4">Chip</div>
+        <p-card header="Chip">
             <div class="font-semibold mb-4">Basic</div>
             <div class="flex items-center flex-col sm:flex-row">
                 <p-chip label="Action" styleClass="m-1"></p-chip>
@@ -145,11 +149,18 @@
 
             <div class="font-semibold my-4">Image</div>
             <div class="flex items-center flex-col sm:flex-row">
-                <p-chip label="Amy Elsner" image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" styleClass="m-1"></p-chip>
-                <p-chip label="Asiya Javayant" image="https://primefaces.org/cdn/primeng/images/demo/avatar/asiyajavayant.png" styleClass="m-1"></p-chip>
-                <p-chip label="Onyama Limba" image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png" styleClass="m-1"></p-chip>
-                <p-chip label="Xuxue Feng" image="https://primefaces.org/cdn/primeng/images/demo/avatar/xuxuefeng.png" styleClass="m-1" [removable]="true"></p-chip>
+                <p-chip label="Amy Elsner" image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+                    styleClass="m-1"></p-chip>
+                <p-chip label="Asiya Javayant"
+                    image="https://primefaces.org/cdn/primeng/images/demo/avatar/asiyajavayant.png"
+                    styleClass="m-1"></p-chip>
+                <p-chip label="Onyama Limba"
+                    image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png"
+                    styleClass="m-1"></p-chip>
+                <p-chip label="Xuxue Feng" image="https://primefaces.org/cdn/primeng/images/demo/avatar/xuxuefeng.png"
+                    styleClass="m-1" [removable]="true"></p-chip>
             </div>
-        </div>
+        </p-card>
     </div>
+</div>
 </div>
