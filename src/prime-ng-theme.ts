@@ -1569,7 +1569,7 @@ export const MyPreset = definePreset(Aura, {
                     indicator: {
                         background: "{surface.200}",
                         hoverBackground: "{surface.300}",
-                        activeBackground: "{primary.color}"
+                        activeBackground: "{basic.brand}"
                     }
                 },
                 dark: {
