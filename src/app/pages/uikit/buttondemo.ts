@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { MenuItem } from 'primeng/api';
 import { ButtonModule } from 'primeng/button';
 import { ButtonGroupModule } from 'primeng/buttongroup';
+import { CardModule } from 'primeng/card';
 import { SelectButton } from 'primeng/selectbutton';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { ToggleButton } from 'primeng/togglebutton';
@@ -12,7 +13,7 @@ import { ToggleSwitch } from 'primeng/toggleswitch';
 @Component({
     selector: 'app-button-demo',
     standalone: true,
-    imports: [ButtonModule, ButtonGroupModule, SplitButtonModule, SelectButton, ToggleButton, CommonModule, FormsModule,ToggleSwitch],
+    imports: [ButtonModule, ButtonGroupModule, SplitButtonModule, SelectButton, ToggleButton, CommonModule, FormsModule,ToggleSwitch, CardModule],
     templateUrl: './button-demo.html'
 
 })

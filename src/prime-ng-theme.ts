@@ -1523,7 +1523,8 @@ export const MyPreset = definePreset(Aura, {
                 background: "{content.background}",
                 borderRadius: "{content.border.radius}",
                 color: "{content.color}",
-                shadow: "0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12)"
+                shadow: "0 4px 8px 0px rgba(0, 0, 0, 0.12)",
+                //shadow: "0 4px 8px 0px rgba(0, 0, 0, 0.12)"
             },
             body: {
                 padding: "1.5rem",
@@ -2097,7 +2098,7 @@ export const MyPreset = definePreset(Aura, {
             },
             header: {
                 padding: "{overlay.modal.padding}",
-                gap: "0.5rem"
+                gap: "0.5rem",
             },
             title: {
                 fontSize: "1.25rem",
@@ -2162,7 +2163,9 @@ export const MyPreset = definePreset(Aura, {
                 shadow: "{overlay.modal.shadow}"
             },
             header: {
-                padding: "{overlay.modal.padding}"
+                padding: "{overlay.modal.padding}", 
+                borderWidth: "1px",
+                borderColor: "{surface.900}",               
             },
             title: {
                 fontSize: "1.5rem",

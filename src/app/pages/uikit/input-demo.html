@@ -120,7 +120,7 @@
             <div class="font-semibold text-xl">Select</div>
             <p-select [(ngModel)]="dropdownValue" [options]="dropdownValues" optionLabel="name" placeholder="Select" />
 
-            <div class="font-semibold text-xl">MultiSelect - Template</div>
+            <!-- <div class="font-semibold text-xl">MultiSelect - Template</div>
             <p-multiselect [options]="multiselectCountries" [(ngModel)]="multiselectSelectedCountries" placeholder="Select Countries" optionLabel="name" display="chip" [filter]="true">
                 <ng-template #selecteditems let-countries>
                     @for (country of countries; track country.code) {
@@ -136,7 +136,7 @@
                         <div>{{ country.name }}</div>
                     </div>
                 </ng-template>
-            </p-multiselect>
+            </p-multiselect> -->
 
             <div class="font-semibold text-xl">MultiSelect - Standard</div>
             <p-multiselect [options]="multiselectCountries" [(ngModel)]="multiselectSelectedCountries" placeholder="Select Countries" optionLabel="name" display="chip" [filter]="true" />
