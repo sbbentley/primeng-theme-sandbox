@@ -19,6 +19,7 @@ import { TagModule } from 'primeng/tag';
 import { Customer, CustomerService, Representative } from '../service/customer.service';
 import { Product, ProductService } from '../service/product.service';
 import { TableRowCollapseEvent, TableRowExpandEvent } from 'primeng/table';
+import { CardModule } from 'primeng/card';
 
 
 interface expandedRows {
@@ -44,7 +45,8 @@ interface expandedRows {
         ButtonModule,
         RatingModule,
         RippleModule,
-        IconFieldModule
+        IconFieldModule,
+        CardModule
     ],
     templateUrl: './table-demo.html',
     styles: `

@@ -11,11 +11,12 @@ import { FormsModule } from '@angular/forms';
 import { TooltipModule } from 'primeng/tooltip';
 import { TableModule } from 'primeng/table';
 import { Product, ProductService } from '../service/product.service';
+import { CardModule } from 'primeng/card';
 
 @Component({
     selector: 'app-overlay-demo',
     standalone: true,
-    imports: [ToastModule, DialogModule, ButtonModule, DrawerModule, PopoverModule, ConfirmPopupModule, InputTextModule, FormsModule, TooltipModule, TableModule, ToastModule],
+    imports: [ToastModule, DialogModule, ButtonModule, DrawerModule, PopoverModule, ConfirmPopupModule, InputTextModule, FormsModule, TooltipModule, TableModule, ToastModule, CardModule],
     templateUrl: './overlay-demo.html',
     providers: [ConfirmationService, MessageService, ProductService]
 })
