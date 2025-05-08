@@ -10,10 +10,11 @@ import { PanelMenuModule } from 'primeng/panelmenu';
 import { TabsModule } from 'primeng/tabs';
 import { MenubarModule } from 'primeng/menubar';
 import { InputTextModule } from 'primeng/inputtext';
-import { StepperModule } from 'primeng/stepper';
+import { StepsModule } from 'primeng/steps';
 import { IconField, IconFieldModule } from 'primeng/iconfield';
 import { InputIcon, InputIconModule } from 'primeng/inputicon';
 import { CardModule } from 'primeng/card';
+import { MenuItem } from 'primeng/api';
 
 @Component({
     selector: 'app-menu-demo',
@@ -34,11 +35,29 @@ import { CardModule } from 'primeng/card';
         InputTextModule,
         IconField,
         InputIcon,
-        CardModule
+        CardModule,
+        StepsModule
     ],
     templateUrl: `./menu-demo.html`
 })
 export class MenuDemo {
+    items: MenuItem[] | undefined;
+
+    active: number = 0;
+
+    ngOnInit() {
+        this.items = [
+            {
+                label: 'Personal Info'
+            },
+            {
+                label: 'Reservation'
+            },
+            {
+                label: 'Review'
+            }
+        ];
+    }
     nestedMenuItems = [
         {
             label: 'Customers',

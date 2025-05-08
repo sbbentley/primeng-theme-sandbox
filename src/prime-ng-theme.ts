@@ -4085,7 +4085,7 @@ export const MyPreset = definePreset(Aura, {
             },
             itemLabel: {
                 color: "{text.muted.color}",
-                activeColor: "{primary.color}",
+                activeColor: "{basic.brand}",
                 fontWeight: "500"
             },
             itemNumber: {
@@ -4094,7 +4094,7 @@ export const MyPreset = definePreset(Aura, {
                 borderColor: "{content.border.color}",
                 activeBorderColor: "{content.border.color}",
                 color: "{text.muted.color}",
-                activeColor: "{primary.color}",
+                activeColor: "{basic.brand}",
                 size: "2rem",
                 fontSize: "1.143rem",
                 fontWeight: "500",
