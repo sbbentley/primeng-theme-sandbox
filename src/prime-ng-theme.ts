@@ -4494,7 +4494,9 @@ export const MyPreset = definePreset(Aura, {
                 left: "0.25rem",
                 top: "0.4rem",
                 checkedBackground: "transparent",
-                checkedShadow: "0 2px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)"
+                checkedShadow: "0 2px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)",
+                padding: ".3rem .5rem",
+                borderRadius: "{form.field.border.radius}",
             },
             colorScheme: {
                 light: {
@@ -4504,7 +4506,7 @@ export const MyPreset = definePreset(Aura, {
                         color: "{surface.600}",
                         sm: {
                             fontSize: "{form.field.sm.font.size}",
-                            padding: "0.625rem 0.75rem"
+                            padding: "0.625rem 0.75rem",
                         },
                         lg: {
                             fontSize: "{form.field.lg.font.size}",
