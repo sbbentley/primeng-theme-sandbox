@@ -5057,7 +5057,7 @@ export const MyPreset = definePreset(Aura, {
             colorScheme: {
                 light: {
                     root: {
-                        background: "{surface.100}",
+                        background: "{surface.0}",
                         borderColor: "{surface.100}"
                     }
                 },
