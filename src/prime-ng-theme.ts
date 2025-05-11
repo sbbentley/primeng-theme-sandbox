@@ -4462,7 +4462,7 @@ export const MyPreset = definePreset(Aura, {
         },
         togglebutton: {
             root: {
-                padding: "0.65rem 1rem",
+                padding: "6px 9px",
                 borderRadius: "{form.field.border.radius}",
                 gap: "0.5rem",
                 fontWeight: "600",
@@ -4495,23 +4495,23 @@ export const MyPreset = definePreset(Aura, {
                 top: "0.4rem",
                 checkedBackground: "transparent",
                 checkedShadow: "0 2px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)",
-                padding: ".3rem .5rem",
+                padding: "4px 9px",
                 borderRadius: "{form.field.border.radius}",
+                sm: {
+                    fontSize: "12px",
+                    padding: "2px 6px",
+                },
+                lg: {
+                    fontSize: "{form.field.lg.font.size}",
+                    padding: "4px 9px",
+                }
             },
             colorScheme: {
                 light: {
                     root: {
                         hoverBackground: "{surface.200}",
                         checkedBackground: "{surface.100}",
-                        color: "{surface.600}",
-                        sm: {
-                            fontSize: "{form.field.sm.font.size}",
-                            padding: "0.625rem 0.75rem",
-                        },
-                        lg: {
-                            fontSize: "{form.field.lg.font.size}",
-                            padding: "0.875rem 1.25rem"
-                        }
+                        color: "{surface.600}"
                     },
                 },
                 dark: {
