@@ -6,6 +6,6 @@ import { CardModule } from 'primeng/card';
     standalone: true,
     selector: 'app-stats-widget',
     imports: [CommonModule, CardModule],
-    templateUrl: `./statswidget.html`
+    templateUrl: `./stats-widget.html`
 })
 export class StatsWidget {}

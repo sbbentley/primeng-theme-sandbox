@@ -8,10 +8,7 @@ import { CardModule } from 'primeng/card';
     standalone: true,
     selector: 'app-revenue-stream-widget',
     imports: [ChartModule, CardModule],
-    template: `<p-card><div class="!mb-8">
-        <div class="font-semibold text-xl mb-4">Revenue Stream</div>
-        <p-chart type="bar" [data]="chartData" [options]="chartOptions" class="h-80" />
-    </div></p-card>`
+    templateUrl: `./revenuestream-widget.html`
 })
 export class RevenueStreamWidget {
     chartData: any;
