@@ -4603,7 +4603,7 @@ export const MyPreset = definePreset(Aura, {
             },
             node: {
                 padding: "0.5rem 0.75rem",
-                borderRadius: "{border.radius.xs}",
+                borderRadius: "{form.field.border.radius}",
                 hoverBackground: "{content.hover.background}",
                 selectedBackground: "{highlight.background}",
                 color: "{text.color}",
