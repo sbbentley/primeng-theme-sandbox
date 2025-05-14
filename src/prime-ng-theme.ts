@@ -210,14 +210,14 @@ export const MyPreset = definePreset(Aura, {
         },
         formField: {
             paddingX: "0.75rem",
-            paddingY: "0.5rem",
+            paddingY: "0.6rem",
             sm: {
                 fontSize: "14px",
                 paddingX: "0.625rem",
                 paddingY: "0.375rem"
             },
             lg: {
-                fontSize: "14px",
+                fontSize: "15px",
                 paddingX: "0.875rem",
                 paddingY: "0.625rem"
             },
@@ -880,9 +880,9 @@ export const MyPreset = definePreset(Aura, {
                 borderRadius: "{form.field.border.radius}",
                 roundedBorderRadius: "2rem",
                 gap: "0.5rem",
-                paddingX: "1rem",
-                paddingY: "0.625rem",
-                iconOnlyWidth: "3rem",
+                paddingX: "{form.field.padding.x}",
+                paddingY: "{form.field.padding.y}",
+                iconOnlyWidth: "2.5rem",
                 sm: {
                     fontSize: "{form.field.sm.font.size}",
                     paddingX: "{form.field.sm.padding.x}",
