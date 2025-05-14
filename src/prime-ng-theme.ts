@@ -247,7 +247,7 @@ export const MyPreset = definePreset(Aura, {
             }
         },
         content: {
-            borderRadius: "{border.radius.sm}"
+            borderRadius: "{border.radius.md}"
         },
         mask: {
             transitionDuration: "0.15s"
@@ -272,21 +272,21 @@ export const MyPreset = definePreset(Aura, {
         },
         overlay: {
             select: {
-                borderRadius: "{border.radius.sm}",
+                borderRadius: "{border.radius.md}",
                 shadow: "0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12)"
             },
             popover: {
-                borderRadius: "{border.radius.sm}",
+                borderRadius: "{border.radius.md}",
                 padding: "1rem",
-                shadow: "0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12)"
+                shadow: "0px 3px 5px 0px rgba(9, 30, 66, 0.20), 0px 0px 1px 0px rgba(9, 30, 66, 0.31)"
             },
             modal: {
-                borderRadius: "{border.radius.sm}",
+                borderRadius: "{border.radius.md}",
                 padding: "1.5rem",
-                shadow: "0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12)"
+                shadow: "0px 8px 12px 0px rgba(9, 30, 66, 0.15), 0px 0px 1px 0px rgba(9, 30, 66, 0.31)"
             },
             navigation: {
-                shadow: "0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12)"
+                shadow: "0px 3px 5px 0px rgba(9, 30, 66, 0.20), 0px 0px 1px 0px rgba(9, 30, 66, 0.31)"
             }
         },
         colorScheme: {
@@ -1523,8 +1523,7 @@ export const MyPreset = definePreset(Aura, {
                 background: "{content.background}",
                 borderRadius: "{content.border.radius}",
                 color: "{content.color}",
-                shadow: "0 4px 8px 0px rgba(0, 0, 0, 0.12)",
-                //shadow: "0 4px 8px 0px rgba(0, 0, 0, 0.12)"
+                shadow: "0px 1px 1px 0px rgba(9, 30, 66, 0.25), 0px 0px 1px 0px rgba(9, 30, 66, 0.31)",
             },
             body: {
                 padding: "1.5rem",
@@ -2160,12 +2159,12 @@ export const MyPreset = definePreset(Aura, {
                 background: "{overlay.modal.background}",
                 borderColor: "{overlay.modal.border.color}",
                 color: "{overlay.modal.color}",
-                shadow: "{overlay.modal.shadow}"
+                shadow: "0px 10px 18px 0px rgba(9, 30, 66, 0.15), 0px 0px 1px 0px rgba(9, 30, 66, 0.31)"
             },
             header: {
                 padding: "{overlay.modal.padding}", 
                 borderWidth: "1px",
-                borderColor: "{surface.900}",               
+                borderColor: "{basic.brand}",               
             },
             title: {
                 fontSize: "1.5rem",
@@ -4878,7 +4877,7 @@ export const MyPreset = definePreset(Aura, {
                         borderColor: "{blue.200}",
                         color: "{blue.700}",
                         detailColor: "{surface.700}",
-                        shadow: "0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)",
+                        shadow: "0px 18px 28px 0px rgba(9, 30, 66, 0.15), 0px 0px 1px 0px rgba(9, 30, 66, 0.31)",
                         closeButton: {
                             hoverBackground: "{blue.100}",
                             focusRing: {
