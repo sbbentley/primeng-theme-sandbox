@@ -214,12 +214,12 @@ export const MyPreset = definePreset(Aura, {
             sm: {
                 fontSize: "14px",
                 paddingX: "0.625rem",
-                paddingY: "0.375rem"
+                paddingY: "0.325rem"
             },
             lg: {
-                fontSize: "15px",
+                fontSize: "16px",
                 paddingX: "0.875rem",
-                paddingY: "0.625rem"
+                paddingY: "0.88rem"
             },
             borderRadius: "{border.radius.md}",
             focusRing: {
