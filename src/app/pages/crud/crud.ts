@@ -19,6 +19,7 @@ import { InputIconModule } from 'primeng/inputicon';
 import { IconFieldModule } from 'primeng/iconfield';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { Product, ProductService } from '../service/product.service';
+import { CardModule } from 'primeng/card';
 
 interface Column {
     field: string;
@@ -52,7 +53,8 @@ interface ExportColumn {
         TagModule,
         InputIconModule,
         IconFieldModule,
-        ConfirmDialogModule
+        ConfirmDialogModule,
+        CardModule
     ],
     templateUrl: `./crud.html`,
     providers: [MessageService, ProductService, ConfirmationService]
