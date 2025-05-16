@@ -254,12 +254,12 @@ export const MyPreset = definePreset(Aura, {
         },
         navigation: {
             list: {
-                padding: "0.5rem 0",
+                padding: "6px 9px",
                 gap: "0"
             },
             item: {
                 padding: "0.75rem 1rem",
-                borderRadius: "{border.radius.none}",
+                borderRadius: "{border.radius.md}",
                 gap: "0.5rem"
             },
             submenuLabel: {
