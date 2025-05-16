@@ -1,9 +1,7 @@
 <div class="flex flex-col gap-8">
-    <p-card header="Button Large - Default Button Size">
+    <p-card header="Buttons">
         <div class="flex flex-col gap-4">
             <div class="gap-2">
-                <div class="font-semibold text-s">Disabled color is not able to be set by theme. PrimeNG only sets
-                    an opacity when disabled</div>
                 <div class="font-semibold text-s">Button font size isn't working in theme. I had to set in css</div>
             </div>
             <div class="font-semibold text-l">Primary</div>
@@ -15,7 +13,7 @@
                 <p-button label="Bookmark" icon="pi pi-star-fill" [disabled]="true" />
                 <p-button label="Bookmark" icon="pi pi-star-fill" iconPos="right" [disabled]="true" />
             </div>
-            <div class="font-semibold text-l">Secondary - Outlined</div>
+            <div class="font-semibold text-l">Secondary</div>
             <div class="flex flex-wrap gap-2">
                 <p-button label="Submit" outlined />
                 <p-button label="Bookmark" icon="pi pi-star-fill" outlined />
@@ -24,7 +22,7 @@
                 <p-button label="Bookmark" icon="pi pi-star-fill" [disabled]="true" outlined />
                 <p-button label="Bookmark" icon="pi pi-star-fill" iconPos="right" [disabled]="true" outlined />
             </div>
-            <div class="font-semibold text-l">Neutral - Severity=Secondary and Outlined</div>
+            <div class="font-semibold text-l">Neutral</div>
             <div class="flex flex-wrap gap-2">
                 <p-button label="Submit" severity="secondary" outlined />
                 <p-button label="Submit" severity="secondary" outlined />
@@ -35,7 +33,7 @@
                 <p-button label="Bookmark" icon="pi pi-star-fill" iconPos="right" [disabled]="true" severity="secondary"
                     outlined />
             </div>
-            <div class="font-semibold text-l">Minimal - Text Button</div>
+            <div class="font-semibold text-l">Minimal</div>
             <div class="flex flex-wrap gap-2">
                 <p-button label="Submit" text />
                 <p-button label="Bookmark" icon="pi pi-star-fill" text />
@@ -46,56 +44,40 @@
             </div>
         </div>
     </p-card>
-    <p-card header='Button Small - size="small"'>
+    <p-card header='Button Sizes'>
         <div class="flex flex-col gap-4">
-            <div class="font-semibold text-m">Disabled color is not able to be set by theme</div>
-            <div class="font-semibold text-l">Primary</div>
+            <div class="font-semibold text-l">Default</div>
+            <div class="flex flex-wrap gap-2">
+                <p-button label="Submit" />
+                <p-button label="Submit" outlined/>
+                <p-button label="Submit" severity="secondary" outlined />
+                <p-splitbutton label="Submit" />
+                <p-button icon="pi pi-star-fill" />
+                <p-button label="Submit" text />
+            </div>
+            <div class="font-semibold text-l">Small</div>
             <div class="flex flex-wrap gap-2">
                 <p-button label="Submit" size="small" />
-                <p-button label="Bookmark" icon="pi pi-star-fill" size="small" />
-                <p-button label="Bookmark" icon="pi pi-star-fill" iconPos="right" size="small" />
-                <p-button label="Disabled" [disabled]="true" size="small" />
-                <p-button label="Bookmark" icon="pi pi-star-fill" [disabled]="true" size="small" />
-                <p-button label="Bookmark" icon="pi pi-star-fill" iconPos="right" [disabled]="true" size="small" />
-            </div>
-            <div class="font-semibold text-l">Secondary - Outlined</div>
-            <div class="flex flex-wrap gap-2">
                 <p-button label="Submit" outlined size="small" />
-                <p-button label="Bookmark" icon="pi pi-star-fill" outlined size="small" />
-                <p-button label="Bookmark" icon="pi pi-star-fill" iconPos="right" outlined size="small" />
-                <p-button label="Disabled" [disabled]="true" outlined size="small" />
-                <p-button label="Bookmark" icon="pi pi-star-fill" [disabled]="true" outlined size="small" />
-                <p-button label="Bookmark" icon="pi pi-star-fill" iconPos="right" [disabled]="true" outlined
-                    size="small" />
-            </div>
-            <div class="font-semibold text-l">Neutral - Severity=Secondary and Outlined</div>
-            <div class="flex flex-wrap gap-2">
                 <p-button label="Submit" severity="secondary" size="small" outlined />
-                <p-button label="Submit" severity="secondary" size="small" outlined />
-                <p-button label="Bookmark" icon="pi pi-star-fill" severity="secondary" size="small" outlined />
-                <p-button label="Bookmark" icon="pi pi-star-fill" iconPos="right" severity="secondary" size="small"
-                    outlined />
-                <p-button label="Disabled" [disabled]="true" severity="secondary" size="small" outlined />
-                <p-button label="Bookmark" icon="pi pi-star-fill" [disabled]="true" severity="secondary" size="small"
-                    outlined />
-                <p-button label="Bookmark" icon="pi pi-star-fill" iconPos="right" [disabled]="true" severity="secondary"
-                    size="small" outlined />
-            </div>
-            <div class="font-semibold text-l">Minimal - Text Button</div>
-            <div class="flex flex-wrap gap-2">
+                <p-splitbutton label="Submit" size="small" />
+                <p-button icon="pi pi-star-fill" size="small" />
                 <p-button label="Submit" size="small" text />
-                <p-button label="Bookmark" icon="pi pi-star-fill" size="small" text />
-                <p-button label="Bookmark" icon="pi pi-star-fill" iconPos="right" size="small" text />
-                <p-button label="Disabled" [disabled]="true" size="small" text />
-                <p-button label="Bookmark" icon="pi pi-star-fill" [disabled]="true" size="small" text />
-                <p-button label="Bookmark" icon="pi pi-star-fill" iconPos="right" [disabled]="true" size="small" text />
+            </div>
+            <div class="font-semibold text-l">Large</div>
+            <div class="flex flex-wrap gap-2">
+                <p-button label="Submit" size="large" />
+                <p-button label="Submit" outlined size="large" />
+                <p-button label="Submit" severity="secondary" size="large" outlined />
+                <p-splitbutton label="Submit" size="large" />
+                <p-button icon="pi pi-star-fill" size="large" />
+                <p-button label="Submit" size="large" text />
             </div>
         </div>
     </p-card>
-    <p-card header='Split Button Large - Default Button Size'>
+    <p-card header='Split Button'>
         <div class="flex flex-col gap-4">
             <div class="font-semibold text-l">Primary</div>
-            <div class="font-semibold text-m">Unable to set outline to white in theme</div>
             <div class="flex flex-wrap gap-2">
                 <p-splitbutton label="Submit" />
                 <p-splitbutton label="Bookmark" icon="pi pi-star-fill" />
@@ -104,7 +86,7 @@
                 <p-splitbutton label="Bookmark" icon="pi pi-star-fill" [disabled]="true" />
                 <p-splitbutton label="Bookmark" icon="pi pi-star-fill" iconPos="right" [disabled]="true" />
             </div>
-            <div class="font-semibold text-l">Secondary - Outlined</div>
+            <div class="font-semibold text-l">Secondary</div>
             <div class="flex flex-wrap gap-2">
                 <p-splitbutton label="Submit" outlined />
                 <p-splitbutton label="Bookmark" icon="pi pi-star-fill" outlined />
@@ -113,7 +95,7 @@
                 <p-splitbutton label="Bookmark" icon="pi pi-star-fill" [disabled]="true" outlined />
                 <p-splitbutton label="Bookmark" icon="pi pi-star-fill" iconPos="right" [disabled]="true" outlined />
             </div>
-            <div class="font-semibold text-l">Neutral - Severity=Secondary and Outlined</div>
+            <div class="font-semibold text-l">Neutral</div>
             <div class="flex flex-wrap gap-2">
                 <p-splitbutton label="Submit" severity="secondary" outlined />
                 <p-splitbutton label="Submit" severity="secondary" outlined />
@@ -127,89 +109,27 @@
             </div>
         </div>
     </p-card>
-    <p-card header='Split Button Small - size="small"'>
+    <p-card header='Icon Button - Regular Button with No Label'>
         <div class="flex flex-col gap-4">
-            <div class="font-semibold text-l">Primary</div>
-            <div class="flex flex-wrap gap-2">
-                <p-splitbutton label="Submit" size="small" />
-                <p-splitbutton label="Bookmark" icon="pi pi-star-fill" size="small" />
-                <p-splitbutton label="Bookmark" icon="pi pi-star-fill" iconPos="right" size="small" />
-                <p-splitbutton label="Disabled" [disabled]="true" size="small" />
-                <p-splitbutton label="Bookmark" icon="pi pi-star-fill" [disabled]="true" size="small" />
-                <p-splitbutton label="Bookmark" icon="pi pi-star-fill" iconPos="right" [disabled]="true" size="small" />
-            </div>
-            <div class="font-semibold text-l">Secondary - Outlined</div>
-            <div class="flex flex-wrap gap-2">
-                <p-splitbutton label="Submit" outlined size="small" />
-                <p-splitbutton label="Bookmark" icon="pi pi-star-fill" outlined size="small" />
-                <p-splitbutton label="Bookmark" icon="pi pi-star-fill" iconPos="right" outlined size="small" />
-                <p-splitbutton label="Disabled" [disabled]="true" outlined size="small" />
-                <p-splitbutton label="Bookmark" icon="pi pi-star-fill" [disabled]="true" outlined size="small" />
-                <p-splitbutton label="Bookmark" icon="pi pi-star-fill" iconPos="right" [disabled]="true" outlined
-                    size="small" />
-            </div>
-            <div class="font-semibold text-l">Neutral - Severity=Secondary and Outlined</div>
-            <div class="flex flex-wrap gap-2">
-                <p-splitbutton label="Submit" severity="secondary" size="small" outlined />
-                <p-splitbutton label="Submit" severity="secondary" size="small" outlined />
-                <p-splitbutton label="Bookmark" icon="pi pi-star-fill" severity="secondary" size="small" outlined />
-                <p-splitbutton label="Bookmark" icon="pi pi-star-fill" iconPos="right" severity="secondary" size="small"
-                    outlined />
-                <p-splitbutton label="Disabled" [disabled]="true" severity="secondary" size="small" outlined />
-                <p-splitbutton label="Bookmark" icon="pi pi-star-fill" [disabled]="true" severity="secondary"
-                    size="small" outlined />
-                <p-splitbutton label="Bookmark" icon="pi pi-star-fill" iconPos="right" [disabled]="true"
-                    severity="secondary" size="small" outlined />
-            </div>
-        </div>
-    </p-card>
-    <p-card header='Icon Button Large - Regular Button with No Label'>
-        <div class="flex flex-col gap-4">
-            <div class="font-semibold text-xl">Icon Button Large - Regular Button with No Label</div>
             <div class="font-semibold text-l">Primary</div>
             <div class="flex flex-wrap gap-2">
                 <p-button icon="pi pi-star-fill" />
                 <p-button icon="pi pi-star-fill" [disabled]="true" />
             </div>
-            <div class="font-semibold text-l">Secondary - Outlined</div>
+            <div class="font-semibold text-l">Secondary</div>
             <div class="flex flex-wrap gap-2">
                 <p-button icon="pi pi-star-fill" outlined />
                 <p-button icon="pi pi-star-fill" [disabled]="true" outlined />
             </div>
-            <div class="font-semibold text-l">Neutral - Text Button Severity=Secondary</div>
+            <div class="font-semibold text-l">Neutral</div>
             <div class="flex flex-wrap gap-2">
                 <p-button icon="pi pi-star-fill" severity="secondary" text />
                 <p-button icon="pi pi-star-fill" [disabled]="true" severity="secondary" text />
             </div>
-            <div class="font-semibold text-l">Minimal - Text Button</div>
+            <div class="font-semibold text-l">Minimal</div>
             <div class="flex flex-wrap gap-2">
                 <p-button icon="pi pi-star-fill" text />
                 <p-button icon="pi pi-star-fill" [disabled]="true" text />
-            </div>
-        </div>
-    </p-card>
-    <p-card header='Icon Button Small - Small Button with No Label'>
-        <div class="flex flex-col gap-4">
-            <div class="font-semibold text-xl">Icon Button Small - Small Button with No Label</div>
-            <div class="font-semibold text-l">Primary</div>
-            <div class="flex flex-wrap gap-2">
-                <p-button icon="pi pi-star-fill" size="small" />
-                <p-button icon="pi pi-star-fill" [disabled]="true" size="small" />
-            </div>
-            <div class="font-semibold text-l">Secondary - Outlined</div>
-            <div class="flex flex-wrap gap-2">
-                <p-button icon="pi pi-star-fill" size="small" outlined />
-                <p-button icon="pi pi-star-fill" [disabled]="true" size="small" outlined />
-            </div>
-            <div class="font-semibold text-l">Neutral - Text Button Severity=Secondary</div>
-            <div class="flex flex-wrap gap-2">
-                <p-button icon="pi pi-star-fill" severity="secondary" size="small" text />
-                <p-button icon="pi pi-star-fill" [disabled]="true" severity="secondary" size="small" text />
-            </div>
-            <div class="font-semibold text-l">Minimal - Text Button</div>
-            <div class="flex flex-wrap gap-2">
-                <p-button icon="pi pi-star-fill" text size="small" />
-                <p-button icon="pi pi-star-fill" [disabled]="true" size="small" text />
             </div>
         </div>
     </p-card>
@@ -221,9 +141,9 @@
             <div class="font-semibold text-xl">Toggle Button</div>
             <p-togglebutton [(ngModel)]="toggleValue" onLabel="Yes" offLabel="No" styleClass="w-24" />
 
-            <div class="font-semibold text-xl">Select Button - Inherits Styles from Toggle Button</div>
+            <div class="font-semibold text-xl">Select Button</div>
             <p-selectbutton [(ngModel)]="selectButtonValue" [options]="selectButtonValues" optionLabel="name" />
-            <div class="font-semibold text-xl">Select Button Small - Inherits Styles from Toggle Button</div>
+            <div class="font-semibold text-xl">Select Button - Small</div>
             <p-selectbutton [(ngModel)]="selectButtonValue" [options]="selectButtonValues" optionLabel="name"
                 size="small" />
         </div>
