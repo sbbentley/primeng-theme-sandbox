@@ -190,7 +190,7 @@ export const MyPreset = definePreset(Aura, {
             style: "none",
             color: "unset",
             offset: "0"
-						  
+
         },
         disabledOpacity: "0.38",
         iconSize: "1rem",
@@ -294,7 +294,7 @@ export const MyPreset = definePreset(Aura, {
                 focusRing: {
                     shadow: "0 0 1px 4px {surface.200}"
                 },
-                
+
                 surface: {
                     0: "#ffffff", //Card and menu background
                     50: "#F3F3F3", // --hcm-color-gray-5
@@ -1033,7 +1033,7 @@ export const MyPreset = definePreset(Aura, {
                         primary: {
                             hoverBackground: "{primary.50}",
                             activeBackground: "{primary.100}",
-                            borderColor: "{primary.color}", 
+                            borderColor: "{primary.color}",
                             color: "{primary.color}"
                         },
                         secondary: {
@@ -2162,9 +2162,9 @@ export const MyPreset = definePreset(Aura, {
                 shadow: "0px 10px 18px 0px rgba(9, 30, 66, 0.15), 0px 0px 1px 0px rgba(9, 30, 66, 0.31)"
             },
             header: {
-                padding: "{overlay.modal.padding}", 
+                padding: "{overlay.modal.padding}",
                 borderWidth: "1px",
-                borderColor: "{basic.brand}",               
+                borderColor: "{basic.brand}",
             },
             title: {
                 fontSize: "1.5rem",
@@ -2175,7 +2175,12 @@ export const MyPreset = definePreset(Aura, {
             },
             footer: {
                 padding: "{overlay.modal.padding}"
+            },
+            css: ({ dt }) => `
+            .p-drawer {
+                border-top: 4px solid ${dt('basic.brand')};
             }
+            `
         },
         editor: {
             toolbar: {
