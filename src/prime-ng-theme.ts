@@ -1521,7 +1521,7 @@ export const MyPreset = definePreset(Aura, {
         card: {
             root: {
                 background: "{content.background}",
-                borderRadius: "{content.border.radius}",
+                borderRadius: "{border.radius.lg}",
                 color: "{content.color}",
                 shadow: "0px 1px 1px 0px rgba(9, 30, 66, 0.25), 0px 0px 1px 0px rgba(9, 30, 66, 0.31)",
             },
