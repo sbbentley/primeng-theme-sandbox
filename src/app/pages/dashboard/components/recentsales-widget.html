@@ -1,5 +1,4 @@
-<p-card>
-    <div class="font-semibold text-xl mb-4">Recent Sales</div>
+<p-card header="Recent Sales">
     <p-table [value]="products" [paginator]="true" [rows]="5" responsiveLayout="scroll">
         <ng-template #header>
             <tr>
@@ -22,4 +21,4 @@
             </tr>
         </ng-template>
     </p-table>
-></p-card>
+</p-card>
