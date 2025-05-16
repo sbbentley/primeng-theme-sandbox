@@ -239,7 +239,7 @@ export const MyPreset = definePreset(Aura, {
             },
             option: {
                 padding: "0.75rem 1rem",
-                borderRadius: "{border.radius.sm}"
+                borderRadius: "{border.radius.md}"
             },
             optionGroup: {
                 padding: "0.75rem 1rem",
