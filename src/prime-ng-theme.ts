@@ -4034,9 +4034,9 @@ export const MyPreset = definePreset(Aura, {
                 fontWeight: "500"
             },
             stepNumber: {
-                activeBackground: "{basic.brand}",
+                activeBackground: "{surface.0}",
                 activeBorderColor: "{basic.brand}",
-                activeColor: "{primary.contrast.color}",
+                activeColor: "{surface.950}",
                 size: "2rem",
                 fontSize: "1.143rem",
                 fontWeight: "500",
@@ -4055,9 +4055,9 @@ export const MyPreset = definePreset(Aura, {
             colorScheme: {
                 light: {
                     stepNumber: {
-                        background: "{surface.400}",
-                        borderColor: "{surface.400}",
-                        color: "{surface.0}"
+                        background: "{surface.0}",
+                        borderColor: "{surface.200}",
+                        color: "{surface.950}"
                     }
                 },
                 dark: {
@@ -4089,16 +4089,16 @@ export const MyPreset = definePreset(Aura, {
             },
             itemLabel: {
                 color: "{text.muted.color}",
-                activeColor: "{basic.brand}",
+                activeColor: "{surface.950}",
                 fontWeight: "500"
             },
             itemNumber: {
                 background: "{content.background}",
                 activeBackground: "{content.background}",
                 borderColor: "{content.border.color}",
-                activeBorderColor: "{content.border.color}",
+                activeBorderColor: "{basic.brand}",
                 color: "{text.muted.color}",
-                activeColor: "{basic.brand}",
+                activeColor: "{surface.700}",
                 size: "2rem",
                 fontSize: "1.143rem",
                 fontWeight: "500",

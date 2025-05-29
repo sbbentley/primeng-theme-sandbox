@@ -43,7 +43,7 @@ import { MenuItem } from 'primeng/api';
 export class MenuDemo {
     items: MenuItem[] | undefined;
 
-    active: number = 0;
+    activeIndex: number = 1;
 
     ngOnInit() {
         this.items = [
@@ -465,4 +465,8 @@ export class MenuDemo {
             ]
         }
     ];
+
+    onActiveIndexChange(event: number) {
+        this.activeIndex = event;
+    }
 }
