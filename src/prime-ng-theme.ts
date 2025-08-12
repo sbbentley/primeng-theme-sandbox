@@ -12,8 +12,25 @@ export const MyPreset = definePreset(Aura, {
             lg: "15px",  // corner-radius/lg
             xl: "18px" // we dont have a Figma variable for this one, I assumed 18px for this
         },
+        fontSize: {
+            heading: {
+              xs: "18px",
+              sm: "20px",
+              md: "24px",
+              lg: "28px",
+              xl: "32px",
+              xxl: "36px"
+            },
+            body: {
+              base: "14px",
+              xs: "11px",
+              sm: "12px",
+              lg: "16px"
+            }
+
+        },
         basic: {
-            brand: "#E50082"
+            brand: "var(--hcm-color-theme)"
         },
         green: {
             // Note: green is currently referenced under "success", this would need to be changed to reference teal instead.
@@ -212,12 +229,12 @@ export const MyPreset = definePreset(Aura, {
             paddingX: "0.75rem",
             paddingY: "0.6rem",
             sm: {
-                fontSize: "14px",
+                fontSize: "{fontSize.body.base}",
                 paddingX: "0.625rem",
                 paddingY: "0.325rem"
             },
             lg: {
-                fontSize: "16px",
+                fontSize: "{fontSize.body.lg}",
                 paddingX: "0.875rem",
                 paddingY: "0.88rem"
             },
@@ -229,7 +246,7 @@ export const MyPreset = definePreset(Aura, {
                 offset: "0px",
                 shadow: "none"
             },
-            transitionDuration: "{transition.duration}"
+            transitionDuration: "{transition.duration}",
         },
         list: {
             padding: "0.5rem .5rem",
@@ -302,7 +319,7 @@ export const MyPreset = definePreset(Aura, {
                     200: "#B9B9B9", // --hcm-color-gray-20
                     300: "#939393", // --hcm-color-gray-30
                     400: "#818181", // --hcm-color-gray-40
-                    500: "#6F6F6F", // --hcm-color-gray-50 
+                    500: "#6F6F6F", // --hcm-color-gray-50
                     600: "#5E5E5E", // --hcm-color-gray-60
                     700: "#4E4E4E", // --hcm-color-gray-70
                     800: "#3E3E3E", // --hcm-color-gray-80
@@ -1461,7 +1478,7 @@ export const MyPreset = definePreset(Aura, {
                     color: "{focus.ring.color}",
                     offset: "{focus.ring.offset}",
                     shadow: "{focus.ring.shadow}"
-                }
+                },
             },
             monthView: {
                 margin: "0.5rem 0 0 0"
@@ -1516,7 +1533,16 @@ export const MyPreset = definePreset(Aura, {
                         color: "{surface.0}"
                     }
                 }
-            }
+            },
+            css: ({dt}: any) => `
+              .p-datepicker-select-year {
+                  font-size: ${dt('fontSize.body.base')} !important;
+              }
+
+              .p-datepicker-select-month {
+                font-size: ${dt('fontSize.body.base')} !important;
+              }
+              `
         },
         card: {
             root: {
@@ -2085,7 +2111,51 @@ export const MyPreset = definePreset(Aura, {
                         selectedBorderColor: "{primary.900}"
                     }
                 }
-            }
+            },
+            css: ({ dt }: any) => `
+              .p-datatable {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .p-datatable-table-container {
+                    flex: 1;
+
+                    p-tablecheckbox, p-tableheadercheckbox {
+                        p-checkbox {
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+
+                    p-toggleswitch {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    td, tr {
+                        font-size: ${dt('fontSize.body.base')};
+                    }
+
+                    td {
+                        vertical-align: middle;
+                    }
+                }
+
+                .p-paginator {
+                    justify-content: flex-end;
+                    padding: 12px;
+
+                    .p-paginator-page, .p-paginator-next, .p-paginator-last, .p-paginator-first, .p-paginator-prev {
+                        &:disabled {
+                            opacity: 1;
+                            color: ${dt('neutral.300')};
+                        }
+                    }
+                }
+              }
+            `
         },
         dialog: {
             root: {
@@ -2176,7 +2246,7 @@ export const MyPreset = definePreset(Aura, {
             footer: {
                 padding: "{overlay.modal.padding}"
             },
-            css: ({ dt }) => `
+            css: ({ dt }: any) => `
             .p-drawer {
                 border-top: 4px solid ${dt('basic.brand')};
             }
@@ -2788,7 +2858,7 @@ export const MyPreset = definePreset(Aura, {
                     fontSize: "{form.field.lg.font.size}",
                     paddingX: "{form.field.lg.padding.x}",
                     paddingY: "{form.field.lg.padding.y}"
-                }
+                },
             }
         },
         knob: {
@@ -4466,7 +4536,7 @@ export const MyPreset = definePreset(Aura, {
         },
         togglebutton: {
             root: {
-                padding: "6px 9px",
+                padding: "6px 6px",
                 borderRadius: "{form.field.border.radius}",
                 gap: "0.5rem",
                 fontWeight: "600",
@@ -4496,13 +4566,13 @@ export const MyPreset = definePreset(Aura, {
             },
             content: {
                 left: "0.25rem",
-                top: "0.4rem",
+                top: "0.25rem",
                 checkedBackground: "transparent",
                 checkedShadow: "0 2px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)",
                 padding: "4px 9px",
                 borderRadius: "{border.radius.sm}",
                 sm: {
-                    fontSize: "12px",
+                    fontSize: "{fontSize.body.sm}",
                     padding: "2px 6px",
                 },
                 lg: {
@@ -4516,7 +4586,7 @@ export const MyPreset = definePreset(Aura, {
                         hoverBackground: "{surface.200}",
                         checkedBackground: "{surface.100}",
                         color: "{surface.600}"
-                    },
+                    }
                 },
                 dark: {
                     root: {
@@ -5111,5 +5181,58 @@ export const MyPreset = definePreset(Aura, {
                 }
             }
         }
-    }
+    },
+    // Below is to override core's styles that are interfering with PrimeNG
+    css: ({dt}: any) => `
+            html
+            {
+              font-size: ${dt('fontSize.body.base')} !important;
+            }
+
+            .p-component {
+              input[type="color"],
+              input[type="date"],
+              input[type="datetime"],
+              input[type="datetime-local"],
+              input[type="email"],
+              input[type="month"],
+              input[type="number"],
+              input[type="password"],
+              input[type="range"],
+              input[type="search"],
+              input[type="tel"],
+              input[type="text"],
+              input[type="time"],
+              input[type="url"],
+              input[type="week"]{
+                  padding: ${dt('form.field.padding.y')} ${dt('form.field.padding.x')} !important;
+                  border-radius: ${dt('border.radius.md')} !important;
+                  height: auto !important;
+              }
+
+              .p-iconfield .p-inputtext:not(:first-child) {
+                padding-inline-start: calc((var(--p-form-field-padding-x) * 2) + var(--p-icon-size)) !important;
+              }
+            }
+              
+            /* undo PrimeNG's global change */
+            * {
+              -moz-box-sizing: revert;
+              -webkit-box-sizing: revert;
+              box-sizing: revert;
+            }
+
+            /* Fix AG Grid */
+            :where(.ag-root-wrapper,.ag-popup,.ag-dnd-ghost,.ag-chart),
+            :where(.ag-root-wrapper,.ag-popup,.ag-dnd-ghost,.ag-chart) :where([class^=ag-]) {
+              box-sizing: border-box;
+            }
+
+            /* re-apply only for PrimeNG elements */
+            .p-component {
+              -moz-box-sizing: border-box;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+            }
+            `
 });
